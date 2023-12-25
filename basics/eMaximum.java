@@ -9,12 +9,12 @@ public class eMaximum{
         int b= input.nextInt();
         int c= input.nextInt();
         int max=0;
-
-        if (a>b){
-            max=a;
-        }
-        else {
+        max=a;
+        if (max<b){
             max=b;
+        }
+       if (max<c){
+            max=c;
         }
         System.out.println("Maximum number is "+max);
     }
