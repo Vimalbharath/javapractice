@@ -9,9 +9,10 @@ public class gCount {
         int num=input.nextInt();
         int count=0;
         while(num>0){
-            if (num%10==3)
+            int rem=num%10;
+            if (rem==3)
             {count++;}
-            num=num%10;
+            num=num/10;
         }
         System.out.println(count);
      }
