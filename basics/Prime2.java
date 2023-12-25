@@ -8,7 +8,7 @@ public class Prime2 {
         System.out.println("Enter the number:");
         int num=input.nextInt();
         int c=2;
-        while (c<num){
+        while (c*c<=num){
             if (num%c==0){
                System.out.println("Not a Prime number");
                return;
@@ -17,7 +17,7 @@ public class Prime2 {
             
         }
         
-        if(c>=num){
+        if(c*c>num){
                 System.out.println("Prime number");  
             }
         input.close();
