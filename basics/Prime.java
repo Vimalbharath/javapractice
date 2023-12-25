@@ -6,14 +6,18 @@ public class Prime {
         Scanner input= new Scanner(System.in);
         System.out.println("Enter the number:");
         int num=input.nextInt();
+        int count=1;
         for (int i=2;i<num;i++){
             if (num%i==0){
-              System.out.println("Not a Prime number");  
-              break;
+               count++;
             }
-            else{
+            
+        }
+        if (count > 1){
+            System.out.println("Not a Prime number"); 
+        }
+        else{
                 System.out.println("Prime number");  
             }
-        }
     }
 }
