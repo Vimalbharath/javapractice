@@ -9,9 +9,11 @@ public class code2 {
         int a = scan.nextInt();
         scan.nextLine();
        
-         String b=scan.nextLine();
+        String b=scan.nextLine();
         System.out.println(a+b);
         scan.close();
+        // jghrkjhge
+        // gbljhgkhg
 
     }
     
