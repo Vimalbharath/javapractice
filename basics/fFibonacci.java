@@ -10,11 +10,13 @@ public class fFibonacci {
         int a=0;
         int b=1;
         int i=2;
-        while(i<num){
-            int temp =a;
+        while(i<=num){
+            int temp =b;
             b=a+b;
-            b=a;
-
+            a=temp;
+            i++;
+            System.out.println(b);
         }
+        System.out.println("The number:"+b);
     }
 }
