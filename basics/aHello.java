@@ -1,6 +1,6 @@
 package basics;
 
-public class code1{
+public class aHello{
    public static void main(String[] args){
         System.out.println("Hello world");
    }

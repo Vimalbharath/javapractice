@@ -2,7 +2,7 @@ package basics;
 
 import java.util.Scanner;
 
-public class code2 {
+public class bInput {
     public static void main(String[] args){
         Scanner scan= new Scanner(System.in);
         System.out.println("Enter the values :");
