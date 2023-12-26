@@ -14,8 +14,11 @@ class fEquation{
             int ans=a;
            
             for(int z=1;z<=n;z++){
-                
-            ans=ans+((2^(z-1))*b);
+                int p=(int)Math.pow(2,z-1);
+                // int q=p*b;
+                // int r=0;
+                // r=r+q;
+            ans=ans+p*b;
             System.out.printf(ans+" ");
             
             
