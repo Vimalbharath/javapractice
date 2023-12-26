@@ -3,24 +3,21 @@ package hackerrank;
 import java.util.*;
 import java.io.*;
 
-class Solution{
-    public static void main(String []argh){
+class fEquation{
+    public static void main(String[] args){
         Scanner in = new Scanner(System.in);
         int t=in.nextInt();
         for(int i=0;i<t;i++){
             int a = in.nextInt();
             int b = in.nextInt();
             int n = in.nextInt();
-            for(int z=0;z<=n;z++){
-                int ans=a;
-            if (z==0){
+            int ans=a;
+           
+            for(int z=1;z<=n;z++){
                 
-                System.out.printf(ans+" ");
-            }
-            else
-            {ans=ans+(2^z)*b;
+            ans=ans+((2^(z-1))*b);
             System.out.printf(ans+" ");
-            }
+            
             
             }
         }
