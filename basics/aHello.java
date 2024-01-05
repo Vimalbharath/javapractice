@@ -1,4 +1,4 @@
-package basics;
+package vimal;
 
 public class aHello{
    public static void main(String[] args){
