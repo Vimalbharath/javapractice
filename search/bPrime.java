@@ -4,11 +4,13 @@ public class bPrime {
     public static void main(String[] args) {
         
     
-    System.out.println(isPrime(7));
+    for(int i=0;i<1000;i++){
+            if(isPrime(i)){        System.out.println(i);}
+        }
     }
     public static boolean isPrime(int num){
         int c=2;
-        while(c*c<num){
+        while(c*c<=num){
             if(num%c == 0){
                 return false;
             }
