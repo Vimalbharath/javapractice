@@ -13,11 +13,12 @@ public class aArmstrong {
             int rem=num%10;
             num=num/10;
             sum=sum+(rem*rem*rem);
-            if (sum==original) {
-                return true;
-            }
+            
           
         }
+        if (sum==original) {
+                return true;
+            }
         return false;
     }
 }
