@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 class fEvenDigits {
     public static void main(String[] args) {
-        int[] arr={1,2,3,4,5};
+        int[] arr={121,21,2213,4,5};
     System.out.println(Arrays.toString(arr));
     int a=findNumbers(arr);
     System.out.println(a);
@@ -25,6 +25,8 @@ class fEvenDigits {
         return false;
     }
     public static int digits(int num){
-        return (int)Math.log10(num);
+        int a=(int)Math.log10(num);
+        return (int)Math.log10(num)-1;
+        
     }
 }
