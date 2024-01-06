@@ -1,4 +1,5 @@
 package searchl;
+//https://leetcode.com/problems/richest-customer-wealth/
 
 public class gMaxWealth{
     public static void main(String[] args) {
