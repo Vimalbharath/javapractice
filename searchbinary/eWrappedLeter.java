@@ -7,6 +7,10 @@ public class eWrappedLeter {
 
         while(start<=end){
             int mid=start+(end-start)/2;
+            if(letters[mid]==target){
+                start=mid+1;
+                break;
+            }
             if(letters[mid]<=target){
                 start=mid+1;
             }
