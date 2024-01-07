@@ -4,13 +4,21 @@ import java.util.Arrays;
 
 public class fFirstLast {
     public static void main(String[] args) {
-        int[] nums = {0,1,2,3,4,4,4,4,4,5,6,7,8,9};
-        int target = 4;
+        int[] nums = {1};
+        int target = 1;
         int[] ans = binarySearch(nums, target);
         System.out.println(Arrays.toString(ans));
     }
 
     private static int[] binarySearch(int[] nums, int target) {
+         if(nums.length==0){
+            return new int[]{-1,-1};
+
+        }
+        if(nums.length==0){
+            return new int[]{0,0};
+
+        }
         int start=0;
         int end=nums.length-1;
        
