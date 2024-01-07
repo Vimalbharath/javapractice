@@ -4,8 +4,8 @@ public class jRotatedBinary {
 
      public static void main(String[] args) {
         int[] arr = {3,4,5,6,7,8,9,0,1,2};
-        int target = 2;
-        int ans = findpivot(arr);
+        int target = 3;
+        int ans = RBS(arr,target);
        
         System.out.println(ans);
     }
@@ -13,9 +13,10 @@ public class jRotatedBinary {
    
 
     private static int RBS(int[] arr,int target) {
-         int start=0;
+        int start=0;
         int end=arr.length-1;
         int ans=-1;
+        int pivot=findpivot(arr);
         ans=binarySearch(arr, target, start, pivot);
         if(ans==-1){
             ans=binarySearch(arr, target, pivot+1,end);
