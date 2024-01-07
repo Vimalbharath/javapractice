@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class fFirstLast {
     public static void main(String[] args) {
-        int[] nums = {1};
+        int[] nums = {1,1,2};
         int target = 1;
         int[] ans = firstlast(nums, target);
         System.out.println(Arrays.toString(ans));
@@ -33,10 +33,10 @@ public class fFirstLast {
             else {
                 ans=mid;
                 if(first){
-                    mid=end-1;
+                    end=mid-1;
                 }
                 else{
-                    mid=start+1;
+                    start=mid+1;
                 }
             }
             
