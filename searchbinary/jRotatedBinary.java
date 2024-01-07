@@ -5,11 +5,16 @@ public class jRotatedBinary {
      public static void main(String[] args) {
         int[] arr = {3,4,5,6,7,8,9,0,1,2};
         int target = 0;
-        int ans = RBS(arr, target);
+        int pivot = pivot(arr);
+        int ans=RBS(arr,target);
         System.out.println(ans);
     }
 
     private static int RBS(int[] arr, int target) {
+        return 0;
+    }
+
+    private static int pivot(int[] arr) {
         int start=0;
         int end=arr.length-1;
         int pivot=0;
@@ -32,7 +37,7 @@ public class jRotatedBinary {
         }
         
 
-        return pivot;
+        return pivot-1;
     }
 
     private static int binarySearch(int[] arr, int target,int start,int end) {
