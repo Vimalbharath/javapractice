@@ -1,9 +1,9 @@
 package searchbinary;
-
+//https://leetcode.com/problems/search-in-rotated-sorted-array/description/
 public class jRotatedBinary {
 
      public static void main(String[] args) {
-        int[] arr = {2,3,4,5,6,0,1};
+        int[] arr = {4,5,6,7,0,1,2};
         int target = 3;
         //int ans = RBS(arr,target);
        int ans = findpivot(arr);
@@ -30,7 +30,7 @@ public class jRotatedBinary {
         
         while (start<=end){
             int mid=start+(end-start)/2;
-            if(arr[start]>arr[mid] &&arr[mid+1]<arr[mid]){
+            if(arr[end]<arr[mid] &&arr[mid+1]<arr[mid]){
                 return mid;
             }
              if(arr[start]>arr[mid]&&arr[mid-1]>arr[mid]){
