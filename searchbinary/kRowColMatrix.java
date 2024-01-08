@@ -15,6 +15,20 @@ public class kRowColMatrix {
     }
 
     private static int[] search(int[][] arr, int i) {
-        return null;
+       int r=0;
+       int c=arr[r].length-1;
+       while(r<arr.length&&c>=0){
+        if(arr[r][c]==i){
+            return new int[]{r,c};
+        }
+        if(arr[r][c]<i){
+            r++;
+        
+        }
+        else{
+           c--;
+        }
+       }
+       return new int[]{-1,-1};
     }
 }
