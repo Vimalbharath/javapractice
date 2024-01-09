@@ -26,11 +26,11 @@ public class bSelectionSort {
     }
 
     private static int getMax(int[] arr, int start, int last) {
-        int max=arr[start];
-        for(int i=start;i<last;i++){
+        int max=start;
+        for(int i=start;i<=last;i++){
             
-            if(arr[i]>=max){
-                max=arr[i];
+            if(arr[i]>arr[max]){
+                max=i;
             }
         }
         return max;
