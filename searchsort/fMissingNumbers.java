@@ -2,7 +2,7 @@ package searchsort;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-//https://leetcode.com/problems/missing-number/
+//https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
 
 public class fMissingNumbers {
       public static void main(String[] args) {
