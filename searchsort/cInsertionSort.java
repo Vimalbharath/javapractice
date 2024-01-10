@@ -10,11 +10,13 @@ public class cInsertionSort {
     }
 
     private static void insertion(int[] arr) {
-        for(int i=0;i<arr.length-2;i++){
+        for(int i=0;i<=arr.length-2;i++){
             for(int j=i+1;j>0;j--){
                 if(arr[j-1]>arr[j]){
                     swap(arr,arr[j-1],arr[j]);
                     
+                }else{
+                    break;
                 }
             }
         }
