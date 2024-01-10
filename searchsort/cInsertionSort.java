@@ -28,4 +28,9 @@ public class cInsertionSort {
         arr[i]=arr[j];
         arr[j]=temp;
     }
+    private static void swapwithvalue(int[] arr, int i, int j) {
+        int temp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+    }
 }
