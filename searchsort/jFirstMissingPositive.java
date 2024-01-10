@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class jFirstMissingPositive {
     public static void main(String[] args) {
-        int[] nums = { 2, 2 };
+        int[] nums = { -1, 2, 2 };
         miss(nums);
         // swap(nums,)
         System.out.println((miss(nums)));
@@ -18,7 +18,7 @@ public class jFirstMissingPositive {
 
         while (i < nums.length) {
             int correct = nums[i] - 1;
-            if (nums[i] != nums[correct]) {
+            if (nums[i]>0 && nums[i]<=nums.length && nums[i] != nums[correct]) {
                 swap(nums, i, correct);
             } else {
                 i++;
@@ -29,7 +29,7 @@ public class jFirstMissingPositive {
                 return j + 1;
             }
         }
-        return nums.length;
+        return nums.length+1;
     }
 
     private static void swap(int[] nums, int i, int j) {
