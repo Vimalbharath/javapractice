@@ -13,10 +13,11 @@ public class dCyclicSort2 {
 
     private static void cycle(int[] arr) {
        int i=0;
-       int correct=i+1;
-       while(i<arr.length-1){
-        if(arr[i]!=correct){
-            swap(arr,i,arr[i]-1);
+       
+       while(i<arr.length){
+        int correct=arr[i]-1;
+        if(arr[i]!=arr[correct]){
+            swap(arr,i,correct);
         }else{
             i++;
         }
