@@ -7,7 +7,7 @@ public class iSetMisMatch {
     
     
     public static void main(String[] args) {
-        int[] nums={1,2,2,4};
+        int[] nums={2,2};
         miss(nums);
         //swap(nums,)
         System.out.println(Arrays.toString(miss(nums)));
@@ -26,7 +26,7 @@ public class iSetMisMatch {
        }
         for(int j=0;j<nums.length;j++){
             if(nums[j]!=j+1){
-                return new int[] {j,j+1};
+                return new int[] {nums[j],j+1};
             }
         }
         return new int[] {-1,-1};
