@@ -4,7 +4,7 @@ package searchsort;
 
 public class gFindDuplicate {
     public static void main(String[] args) {
-        int[] nums={3,4,1,1,5};
+        int[] nums={1,3,4,2,2};
         miss(nums);
         //swap(nums,)
         System.out.println(miss(nums));
@@ -14,16 +14,20 @@ public class gFindDuplicate {
      int i=0;
        
         while(i<nums.length){
+
+        if(nums[i]!=i+1){    
         int correct=nums[i]-1;
         if(nums[i]!=nums[correct]){
             swap(nums,i,correct);
-        }else{
-            return nums[i];
         }
-       
-            i++;
+        else{
+            return nums[i];
+        }}
+       else{
+           int a= i++;
     
        }
+    }
         return -1;
     }
 
