@@ -17,7 +17,7 @@ public class fMissingNumbers {
        
         while(i<nums.length){
         int correct=nums[i]-1;
-        if(nums[i]<nums.length&&nums[i]!=nums[correct]){
+        if(nums[i]!=nums[correct]){
             swap(nums,i,correct);
         }else{
             i++;
@@ -25,8 +25,8 @@ public class fMissingNumbers {
        }
          ArrayList<Integer> vimal=new ArrayList<>();
         for(int j=0;j<nums.length;j++){
-            if(nums[j]!=j){
-                vimal.add(j);
+            if(nums[j]-1!=j){
+                vimal.add(j+1);
             }
         }
         return vimal;
