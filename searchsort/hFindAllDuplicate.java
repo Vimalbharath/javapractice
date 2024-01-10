@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class hFindAllDuplicate {
     public static void main(String[] args) {
-        int[] nums = {4,3,2,7,8,2,3,1 };
+        int[] nums = { 4, 3, 2, 7, 8, 2, 3, 1 };
         miss(nums);
         // swap(nums,)
         System.out.println(miss(nums));
@@ -14,26 +14,23 @@ public class hFindAllDuplicate {
 
     private static ArrayList<Integer> miss(int[] nums) {
         int i = 0;
-        ArrayList<Integer> vimal=new ArrayList<>();
-        
-        
 
         while (i < nums.length) {
-
-        //    if (nums[i] != i + 1) {
-                int correct = nums[i] - 1;
-                if (nums[i] != nums[correct]) {
-                    swap(nums, i, correct);
-                } else {
-                    vimal.add(nums[i]);
-                    
-               }
-            //} else {
-                int a = i++;
-
-        //    }
+            int correct = nums[i]-1;
+            if (nums[i] != nums[correct]) {
+                swap(nums, i, correct);
+            } else {
+                i++;
+            }
         }
-       return vimal;
+        ArrayList<Integer> vimal = new ArrayList<>();
+        for (int j = 0; j < nums.length; j++) {
+            if (nums[j] - 1 != j) {
+                vimal.add(nums[j]);
+            }
+        }
+        return vimal;
+
     }
 
     private static void swap(int[] nums, int i, int j) {
