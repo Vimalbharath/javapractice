@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class dCyclicSort {
      public static void main(String[] args) {
-        int[] arr={5,4,3,2,1,};
+        int[] arr={3,4,2,1,5};
         cycle(arr);
         //swap(arr,)
         System.out.println(Arrays.toString(arr));
