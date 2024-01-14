@@ -2,7 +2,7 @@ package recursion.aintro;
 
 public class numbers {
     public static void main(String[] args) {
-        print(5);
+        print(1);
     }
 
     private static void print(int n) {
