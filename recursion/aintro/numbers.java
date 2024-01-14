@@ -9,7 +9,7 @@ public class numbers {
         if(n==5){
             System.out.println(n);
         }
-        System.out.println(1);
+        System.out.println(n);
         print(n+1);
     }
 }
