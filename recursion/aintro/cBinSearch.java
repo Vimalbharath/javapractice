@@ -16,7 +16,7 @@ public class cBinSearch {
         if(arr[mid]==target){
             return mid;
         }
-        if(arr[mid]>target){
+        if(arr[mid]<target){
             return binarySearch(arr, target, mid+1, end);
         }
         else
