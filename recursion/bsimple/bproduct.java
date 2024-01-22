@@ -2,16 +2,17 @@ package recursion.bsimple;
 
 public class bproduct {
      public static void main(String[] args) {
-        product(5);
+        System.out.println(product(5));
     }
 
-    private static void product(int n) {
-        int ans=1;
+    private static int product(int n) {
+        int ans=n;
         if(n==0){
             System.out.println(ans);
-            return ;
+            return ans;
         }
         ans=ans*n;
         product(n-1);
+        return ans;
     }
 }
