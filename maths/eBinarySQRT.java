@@ -19,7 +19,7 @@ public class eBinarySQRT {
             if(m*m==e){
                 return m;
             }
-            else if(m*m>e){
+            else if(m*m>n){
                 e=m-1;
             }else{
                 s=m+1;
