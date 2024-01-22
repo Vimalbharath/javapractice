@@ -9,7 +9,7 @@ public class dsumdigits {
         if(n==0){
             return 0;
         }
-        return n+sumdigits(n/10);
+        return n%10+sumdigits(n/10);
     }
 
 }
