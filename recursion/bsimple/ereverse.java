@@ -9,6 +9,6 @@ public class ereverse {
         if(n==0){
             return 0;
         }
-        return n%10+10 * revdigits(n/10);
+        return revdigits(n/10) +10 *  n%10;
     }
 }
