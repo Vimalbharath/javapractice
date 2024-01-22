@@ -12,7 +12,7 @@ public class bproduct {
             return ans;
         }
         ans=ans*n;
-        product(n-1);
+        product(n*n-1);
         return ans;
     }
 }
