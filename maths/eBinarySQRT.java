@@ -2,7 +2,7 @@ package maths;
 
 public class eBinarySQRT {
     public static void main(String[] args) {
-        int n = 36;
+        int n = 40;
         int p = 3;
 
         System.out.printf("%.3f", sqrt(n, p));
@@ -25,6 +25,16 @@ public class eBinarySQRT {
                 s=m+1;
                 root=m;
             }
+        }
+
+        double incr = 0.1;
+        for (int i = 0; i < p; i++) {
+            //while debugging vimal observed here using linear search
+            while (root * root <= n) {
+                root += incr;
+            }
+            root -= incr;
+            incr = incr/10;
         }
       return root;  
     }
