@@ -10,7 +10,7 @@ public class dSeive {
     private static void sieve(int n, boolean[] primes) {
         for (int i = 2; i*i <= n; i++){
             if(!primes[i]){
-                for (int j = i*2; j <= n; j=i+j) {
+                for (int j = i+i; j <= n; j=i+j) {
                     //j confusing
                     primes[j] = true;
                 }
