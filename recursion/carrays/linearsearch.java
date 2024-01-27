@@ -2,7 +2,7 @@ package recursion.carrays;
 
 public class linearsearch {
      public static void main(String[] args) {
-        int[] arr={};
+        int[] arr={0,1,2,3};
         int target=0;
         System.out.println(linear(arr,0,target));
     }
@@ -11,8 +11,8 @@ public class linearsearch {
         if(arr.length==0){
             return false;
         }
-       if(arr.length-1==index){
-        return arr[index]==target;
+       if(arr.length==index){
+        return false;
        }
        return arr[index]==target||linear(arr,index+1,target);
     }
