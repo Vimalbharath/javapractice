@@ -16,12 +16,15 @@ public class selection {
         }
         if (col < row) {
             if (arr[col] < arr[max]) {
-                swap(arr,col,max);
+                selection1(arr, row, col + 1,max);
                 
                 }
+                else{
                 selection1(arr, row, col + 1,col);
+                }
             
         } else {
+            swap(arr,col,max);
 
             selection1(arr, row - 1, 0,0);
         }
