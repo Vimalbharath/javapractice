@@ -7,9 +7,9 @@ public class sorted {
     }
 
     private static boolean sort(int[] arr,int index) {
-       if(arr.length-1==0){
+       if(arr.length-1==index){
         return true;
        }
-       return arr[i]<arr[i+1]&&sort(arr,index-1);
+       return arr[index]<arr[index+1]&&sort(arr,index+1);
     }
 }
