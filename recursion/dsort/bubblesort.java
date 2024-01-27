@@ -19,8 +19,9 @@ public class bubblesort {
                 int temp = arr[col];
                 arr[col] = arr[col + 1];
                 arr[col + 1] = temp;
+                }
                 bubble(arr, row, col + 1);
-            }
+            
         } else {
 
             bubble(arr, row - 1, 0);
