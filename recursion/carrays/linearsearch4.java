@@ -6,7 +6,8 @@ public class linearsearch4 {
      public static void main(String[] args) {
         int[] arr={0,1,2,3,3,3,3,3,6,7,8};
         int target=3;
-        System.out.println(linear4(arr,0,target));
+        ArrayList<Integer> ans=linear4(arr,0,target);
+        System.out.println(ans);
     }
     
     
