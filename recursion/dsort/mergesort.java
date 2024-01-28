@@ -42,10 +42,12 @@ public class mergesort {
        while(i<left.length){
         ans[k]=left[i];
         i++;
+        k++;
        }
        while(j<right.length){
         ans[k]=right[j];
         j++;
+        k++;
        }
        return ans;
     }
