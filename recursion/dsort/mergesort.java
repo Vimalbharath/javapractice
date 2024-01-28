@@ -4,14 +4,14 @@ import java.util.Arrays;
 
 public class mergesort {
      public static void main(String[] args) {
-        int[] arr = { 3, 5, 6, 8, 2, 4 };
+        int[] arr = {5,4,3,2,1};
         arr=merge(arr);
         System.out.println(Arrays.toString(arr));
 
     }
 
     private static int[] merge(int[] arr) {
-        if(arr.length<1){
+        if(arr.length==1){
             return arr;
         }
         int mid =arr.length/2;
