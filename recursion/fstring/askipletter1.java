@@ -16,7 +16,7 @@ public class askipletter1 {
         skip(p,up.substring(1));
        }
        else{
-        skip(p,ch+up.substring(1));
+        skip(p+ch,up.substring(1));
        }
     }
 }
