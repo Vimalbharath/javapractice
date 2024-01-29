@@ -2,7 +2,7 @@ package recursion.fstring;
 
 public class bskipword1 {
     public static void main(String[] args) {
-        System.out.println(skipapple("abappplecdbbcbg"));
+        System.out.println(skipapple("abapplecdbbcbg"));
 
     }
 
