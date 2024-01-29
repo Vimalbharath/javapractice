@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class quicksort {
     public static void main(String[] args) {
-        int[] arr = {5,4,3,2,1};
-        quick(arr,0,arr.length);
+        int[] arr = { 3, 5, 6, 8, 2, 4};
+        quick(arr,0,arr.length-1);
         System.out.println(Arrays.toString(arr));
     }
 
@@ -13,7 +13,7 @@ public class quicksort {
         int s=low;
         int e=hi;
         int p=s+(e-s)/2;
-        while(e>=s){
+        while(low>=hi){
             return;
         }
         while(s<=e){
@@ -27,8 +27,11 @@ public class quicksort {
                 int temp=arr[s];
                 arr[s]=arr[e];
                 arr[e]=temp;
-
+                s++;
+                e--;
             }
         }
+        quick(arr,low,e);
+        quick(arr,s,hi);
     }
 }
