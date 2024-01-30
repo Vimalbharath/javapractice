@@ -10,7 +10,7 @@ public class jphonepad {
             System.out.println(p);
             return;
         }
-        int digit=up.charAt(0)+'0';
+        int digit=up.charAt(0)-'0';
 
         
         for(int i=(digit-1)*3;i<digit*3;i++){
