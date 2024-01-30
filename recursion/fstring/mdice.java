@@ -10,8 +10,8 @@ public class mdice {
         System.out.println(p);
         return;
        }
-       for(int i=1;i<=6&&i<=4;i++){
-            dice(p+i,target);
+       for(int i=1;i<=6&&i<=target;i++){
+            dice(p+i,target-i);
        }
     }
 }
