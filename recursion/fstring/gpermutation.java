@@ -12,7 +12,9 @@ public class gpermutation {
         }
         char ch=up.charAt(0);
         for(int i=0;i<p.length();i++){
-            permutation(p.substring(i, i), up);
+            String f = p.substring(0, i);
+            String s = p.substring(i, p.length());
+            permutation(f+ch+s,up.substring(i));
         }
     }
 }
