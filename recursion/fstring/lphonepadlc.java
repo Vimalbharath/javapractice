@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class lphonepadlc {
     public static void main(String[] args) {
-        System.out.println(permutation("","23"));
+        System.out.println(permutation("","8"));
     }
 
     private static ArrayList<String> permutation(String p, String up) {
@@ -19,6 +19,7 @@ public class lphonepadlc {
         int len=j+3;
         if(digit>7){
             j=j+1;
+            len=len+1;
         }
         if(digit==7 ||digit==9 ){
             len=len+1;
