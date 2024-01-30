@@ -11,10 +11,10 @@ public class gpermutation {
             return;
         }
         char ch=up.charAt(0);
-        for(int i=0;i<p.length();i++){
+        for(int i=0;i<=p.length();i++){
             String f = p.substring(0, i);
             String s = p.substring(i, p.length());
-            permutation(f+ch+s,up.substring(i));
+            permutation(f+ch+s,up.substring(1));
         }
     }
 }
