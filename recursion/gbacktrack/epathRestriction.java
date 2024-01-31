@@ -8,7 +8,7 @@ public class epathRestriction {
             {true,true,true}
         };
 
-        pathRestriction("",board,3,3);
+        pathRestriction("",board,0,0);
     }
 
     private static void pathRestriction(String p,boolean [][] board,int r, int c) {
