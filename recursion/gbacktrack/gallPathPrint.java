@@ -15,6 +15,7 @@ public class gallPathPrint {
 
     private static void allPathPrint(String p,boolean [][] board,int r, int c,int[][] path,int step) {
        if(r==board.length-1 && c==board[0].length-1){
+        path[r][c] = step;
         for(int[] col:path){
             System.out.println(Arrays.toString(col));
         }
@@ -27,6 +28,7 @@ public class gallPathPrint {
        }
 
        board[r][c]=false;
+       path[r][c] = step;
        if(r<board.length-1){
         allPathPrint(p+'D',board,r+1,c,path,step+1);
        }
