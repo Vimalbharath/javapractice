@@ -41,4 +41,11 @@ public class aLL {
        }
        size=size+1;
     }
+    public void display(){
+        Node temp=head;
+        while(temp !=null){
+            System.out.println(temp.value+" -> ");
+            temp=temp.next;
+        }
+    }
 }
