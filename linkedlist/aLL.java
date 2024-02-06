@@ -5,7 +5,13 @@ public class aLL {
     private node tail;
     private node next;
 
+    private int size=0;
     
+    public void setSize(int size) {
+        this.size = size;
+    }
+
+
     public class node{
         int value;
         node next;
@@ -18,5 +24,10 @@ public class aLL {
             this.value = value;
             this.next = next;
         }
+    }
+
+
+    public void addFirst(int num) {
+       node.value=num;
     }
 }
