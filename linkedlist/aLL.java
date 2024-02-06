@@ -1,26 +1,29 @@
 package linkedlist;
 
 public class aLL {
-    private node head;
-    private node tail;
-    private node next;
-
-    private int size=0;
+    private Node head;
+    private Node tail;
     
-    public void setSize(int size) {
-        this.size = size;
+
+    private int size;
+    
+    
+
+
+    public aLL() {
+        this.size = 0;
     }
 
 
-    public class node{
+    public class Node{
         int value;
-        node next;
+        Node next;
 
-        public node(int value) {
+        public Node(int value) {
             this.value = value;
         }
         
-        public node(int value, node next) {
+        public Node(int value, Node next) {
             this.value = value;
             this.next = next;
         }
@@ -28,8 +31,14 @@ public class aLL {
 
 
     public void addFirst(int num) {
-       node.value=num;
+        // new node showing static error
+        Node node=new Node(num);
+    // same as above   node.value=num;
        node.next=head;
        head=node;
+       if(tail==null){
+        tail=head;
+       }
+       size=size+1;
     }
 }
