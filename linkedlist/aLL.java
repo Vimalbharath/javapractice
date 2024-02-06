@@ -29,5 +29,7 @@ public class aLL {
 
     public void addFirst(int num) {
        node.value=num;
+       node.next=head;
+       head=node;
     }
 }
