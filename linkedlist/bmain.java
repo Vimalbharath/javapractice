@@ -11,6 +11,9 @@ public class bmain {
         linked.addLast(3);
         linked.add(9,2);
         linked.display();
+        System.out.println(linked.deletefirst());
+        System.out.println(linked.deleteLast());
+        linked.display();
     }
    
 }

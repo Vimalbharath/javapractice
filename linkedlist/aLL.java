@@ -36,6 +36,22 @@ public class aLL {
         return val;
     }
 
+    public int deleteLast(){
+        int val=tail.value;
+        tail=getNode(size-1);
+        size--;
+        return val;
+    }
+
+    public Node getNode(int index){
+         Node temp=head;
+        for(int i=1;i<index;i++){
+            //how to get index?
+            temp=temp.next;
+        }
+        return temp;
+    }
+
     public void add(int num,int index) {
         if(index==0){
             addFirst(num);
@@ -90,6 +106,8 @@ public class aLL {
         while(temp !=null){
             System.out.print(temp.value+" -> ");
             temp=temp.next;
+           
         }
+         System.out.print("END");
     }
 }
