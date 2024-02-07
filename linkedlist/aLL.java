@@ -29,6 +29,13 @@ public class aLL {
         }
     }
 
+    public int deletefirst(){
+        int val=head.value;
+        head=head.next;
+        size--;
+        return val;
+    }
+
     public void add(int num,int index) {
         if(index==0){
             addFirst(num);
