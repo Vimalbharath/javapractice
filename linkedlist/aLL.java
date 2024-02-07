@@ -28,7 +28,14 @@ public class aLL {
             this.next = next;
         }
     }
-
+    public void addLast(int num) {
+        Node node=new Node(num);
+        if(tail==null){
+            addFirst(num);
+        }
+        tail.next=node;
+        tail=node;
+    }
 
     public void addFirst(int num) {
         // new node showing static error
@@ -44,7 +51,7 @@ public class aLL {
     public void display(){
         Node temp=head;
         while(temp !=null){
-            System.out.println(temp.value+" -> ");
+            System.out.print(temp.value+" -> ");
             temp=temp.next;
         }
     }
