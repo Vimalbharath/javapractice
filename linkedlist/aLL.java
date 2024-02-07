@@ -53,6 +53,19 @@ public class aLL {
         return val;
     }
 
+    public int delete(int index){
+        if(index==1){
+            return deletefirst();
+        }
+        if(index==size){
+            return deleteLast();
+        }
+        Node prev=getNode(index-1);
+        int val=prev.next.value;
+        prev.next=prev.next.next;
+        return val;
+    }
+
     public Node getNode(int index){
          Node temp=head;
         for(int i=1;i<=index;i++){

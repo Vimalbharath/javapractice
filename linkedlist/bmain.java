@@ -19,6 +19,8 @@ public class bmain {
         System.out.println(linked.deleteLast());
         //System.out.println(linked.getSize());
         linked.display();
+        System.out.println(linked.delete(2));
+        linked.display();
     }
    
 }
