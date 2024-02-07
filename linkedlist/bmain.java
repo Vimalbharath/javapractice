@@ -9,10 +9,15 @@ public class bmain {
         linked.addFirst(7);
         linked.addFirst(8);
         linked.addLast(3);
+        //System.out.println(linked.getSize());
         linked.add(9,2);
+        //System.out.println(linked.getSize());
         linked.display();
+        //System.out.println(linked.getSize());
         System.out.println(linked.deletefirst());
+        //System.out.println(linked.getSize());
         System.out.println(linked.deleteLast());
+        //System.out.println(linked.getSize());
         linked.display();
     }
    
