@@ -8,6 +8,7 @@ public class bmain {
         linked.addFirst(6);
         linked.addFirst(7);
         linked.addFirst(8);
+        linked.addLast(3);
         linked.display();
     }
    
