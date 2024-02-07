@@ -10,6 +10,10 @@ public class aLL {
     
 
 
+    public int getSize() {
+        return size;
+    }
+
     public aLL() {
         this.size = 0;
     }
@@ -32,20 +36,26 @@ public class aLL {
     public int deletefirst(){
         int val=head.value;
         head=head.next;
+        if(head==null){
+            tail=null;
+        }
         size--;
         return val;
     }
 
     public int deleteLast(){
         int val=tail.value;
-        tail=getNode(size-1);
+        //size -2 matters
+        tail=getNode(size-2);
+        //missed this line
+        tail.next=null;
         size--;
         return val;
     }
 
     public Node getNode(int index){
          Node temp=head;
-        for(int i=1;i<index;i++){
+        for(int i=1;i<=index;i++){
             //how to get index?
             temp=temp.next;
         }
