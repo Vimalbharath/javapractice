@@ -9,6 +9,7 @@ public class bmain {
         linked.addFirst(7);
         linked.addFirst(8);
         linked.addLast(3);
+        linked.add(9,2);
         linked.display();
     }
    
