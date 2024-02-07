@@ -28,13 +28,43 @@ public class aLL {
             this.next = next;
         }
     }
+
+    public void add(int num,int index) {
+        if(index==0){
+            addFirst(num);
+            return;
+        }
+        if(index==size){
+            addLast(num);
+            return;
+        }
+        
+        Node temp=head;
+        for(int i=1;i<index;i++){
+            //how to get index?
+            temp=temp.next;
+        }
+        //here another contructor
+        Node node=new Node(num,temp);
+        node.next=temp.next;
+        temp.next=node;
+        size++;
+
+
+    }
+
     public void addLast(int num) {
-        Node node=new Node(num);
+        
         if(tail==null){
             addFirst(num);
+            return;
         }
+
+        //new node will be created at add first
+        Node node=new Node(num);
         tail.next=node;
         tail=node;
+        size=size+1;
     }
 
     public void addFirst(int num) {
