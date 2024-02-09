@@ -39,6 +39,10 @@ public class cdoubleLL {
 
     public void insertnext(int after,int val){
         Node p=findnode(after);
+        if(p==null){
+            System.out.println("does not exist");
+            return;
+        }
         Node node=new Node(val);
         if(p.next!=null){
         node.next=p.next;
@@ -111,6 +115,7 @@ public class cdoubleLL {
         linked.insert(4);
         linked.insertlast(99);
         linked.insertnext(2,50);
+        linked.insertnext(99,100);
         linked.display();
 
     }
