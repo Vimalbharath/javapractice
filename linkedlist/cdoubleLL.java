@@ -22,8 +22,10 @@ public class cdoubleLL {
         Node tail=null;
         while(temp!=null){
             System.out.print(temp.val+ " -> ");
-            temp=temp.next;
+            //position to print reverse
             tail=temp;
+            temp=temp.next;
+            
         }
         
         System.out.print("END ");
