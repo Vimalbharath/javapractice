@@ -7,18 +7,19 @@ public class cdoubleLL {
     public void insert(int val){
         Node node=new Node(val);
         if(head!=null){
-            
+            head.prev=node;
             node.next=head;
         }
         
         node=head;
-        node.prev=null;
+        
     }
 
     public void display(){
         Node temp=head;
         while(temp!=null){
             System.out.println(temp.val+ " - >");
+            temp=temp.next;
         }
     }
 
@@ -35,6 +36,8 @@ public class cdoubleLL {
 
         public Node(int val) {
             this.val = val;
+            this.next = null;
+            this.prev = null;
         }
     }
     public static void main(String[] args) {
