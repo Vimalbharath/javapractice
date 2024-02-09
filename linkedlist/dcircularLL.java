@@ -32,11 +32,12 @@ public class dcircularLL {
         Node node=head;
         Node n=node.next;
         do{
+            //no problem when node=node.next; above or below
             node=node.next;
             n=n.next;
             if(n.val==val){
                 node.next=n.next;
-                n=n.next;
+                // n=n.next;
             }
         }while(node!=head);
     }
