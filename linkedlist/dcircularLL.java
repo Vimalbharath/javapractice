@@ -23,6 +23,23 @@ public class dcircularLL {
         }while(temp!=head);
         System.out.print(" HEAD ");
     }
+    public void delete(int val){
+        if (head.val==val){
+            tail.next=head.next;
+            head=tail.next;
+            return;
+        }
+        Node node=head;
+        Node n=node.next;
+        do{
+            node=node.next;
+            n=n.next;
+            if(n.val==val){
+                node.next=n.next;
+                n=n.next;
+            }
+        }while(node!=head);
+    }
     public class Node{
         int val;
         public Node(int val) {
@@ -42,6 +59,14 @@ public class dcircularLL {
         linked.insert(4);
         linked.insert(5);
         linked.display();
+        linked.delete(3);
+        linked.display();
+        linked.delete(5);
+        linked.display();
+        linked.delete(1);
+        linked.display();
+        
+
 
     }
 }
