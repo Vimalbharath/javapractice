@@ -37,4 +37,14 @@ public class cdoubleLL {
             this.val = val;
         }
     }
+    public static void main(String[] args) {
+        cdoubleLL linked=new cdoubleLL();
+        linked.insert(0);
+        linked.insert(1);
+        linked.insert(2);
+        linked.insert(3);
+        linked.insert(4);
+        linked.display();
+
+    }
 }
