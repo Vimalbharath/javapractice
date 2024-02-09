@@ -16,8 +16,23 @@ public class cdoubleLL {
         head=node;
         
     }
+    public void insertlast(int val){
+        Node node=new Node(val);
+        if (head==null){
+            head=node;
+            return;
+        }
+        Node last=head;
+        while(last!=null){
+            last=last.next;
+        }
+        node.prev=last;
+        
+
+    }
 
 // insertnenxt next passing node and value
+//pass after val and new val
 
     public void insertnext(Node node,int val){
         if(node.next==null){
@@ -25,6 +40,7 @@ public class cdoubleLL {
         }
     }
 //find node returning index passing node not possible
+//pass val return node
     public int findnode(Node node){
         Node temp=head;
         int count=0;
