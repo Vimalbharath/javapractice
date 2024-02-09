@@ -1,6 +1,6 @@
 package linkedlist;
 
-import recursion.carrays.sorted;
+
 
 public class cdoubleLL {
 
@@ -23,17 +23,17 @@ public class cdoubleLL {
         while(temp!=null){
             System.out.print(temp.val+ " -> ");
             temp=temp.next;
-            
+            tail=temp;
         }
-        tail=temp.prev;
+        
         System.out.print("END ");
         System.out.println();
         System.out.println("Printing in reverse");
-        //while(tail!=null){
+        while(tail!=null){
             System.out.print(tail.val+ " -> ");
             tail=tail.prev;
             
-        //}
+        }
     }
 
     public class Node{
