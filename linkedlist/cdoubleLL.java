@@ -17,6 +17,27 @@ public class cdoubleLL {
         
     }
 
+// insertnenxt next passing node and value
+
+    public void insertnext(Node node,int val){
+        if(node.next==null){
+            
+        }
+    }
+//find node returning index passing node not possible
+    public int findnode(Node node){
+        Node temp=head;
+        int count=0;
+        
+        while(temp!=null){
+           if(temp.val==node.val){
+                return count;
+           }
+            count=count+1;
+        }
+        return 
+    }
+
     public void display(){
         Node temp=head;
         Node tail=null;
