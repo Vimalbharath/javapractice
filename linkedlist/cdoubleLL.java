@@ -22,12 +22,15 @@ public class cdoubleLL {
             head=node;
             return;
         }
-        Node last=head;
-        while(last!=null){
-            last=last.next;
+        Node temp=head;
+        Node last=null;
+        while(temp!=null){
+            last =temp;
+            temp=temp.next;
         }
         node.prev=last;
-        
+        last.next=node;
+
 
     }
 
@@ -51,7 +54,7 @@ public class cdoubleLL {
            }
             count=count+1;
         }
-        return 
+      
     }
 
     public void display(){
@@ -99,6 +102,7 @@ public class cdoubleLL {
         linked.insert(2);
         linked.insert(3);
         linked.insert(4);
+        linked.insertlast(99);
         linked.display();
 
     }
