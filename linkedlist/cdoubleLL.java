@@ -40,7 +40,11 @@ public class cdoubleLL {
     public void insertnext(int after,int val){
         Node p=findnode(after);
         Node node=new Node(val);
+        if(p.next!=null){
         node.next=p.next;
+        Node a=node.next;
+        a.prev=node;
+        }
         node.prev=p;
         p.next=node;
         
