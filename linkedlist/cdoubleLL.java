@@ -11,16 +11,17 @@ public class cdoubleLL {
             node.next=head;
         }
         
-        node=head;
+        head=node;
         
     }
 
     public void display(){
         Node temp=head;
         while(temp!=null){
-            System.out.println(temp.val+ " - >");
+            System.out.print(temp.val+ " -> ");
             temp=temp.next;
         }
+        System.out.print("END ");
     }
 
     public class Node{
