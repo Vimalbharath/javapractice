@@ -2,6 +2,25 @@ package linkedlist;
 
 public class cdoubleLL {
 
+    private Node head;
+    
+    public void insert(int val){
+        Node node=new Node(val);
+        if(head!=null){
+            
+            node.next=head;
+        }
+        
+        node=head;
+        node.prev=null;
+    }
+
+    public void display(){
+        Node temp=head;
+        while(temp!=null){
+            System.out.println(temp.val+ " - >");
+        }
+    }
 
     public class Node{
         private int val;
