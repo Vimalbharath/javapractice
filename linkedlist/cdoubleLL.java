@@ -58,6 +58,7 @@ public class cdoubleLL {
            if(temp.val==value){
                 return temp;
            }
+           temp=temp.next;
            
         }
       return null;
