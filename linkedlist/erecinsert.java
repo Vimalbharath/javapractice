@@ -6,7 +6,7 @@ public class erecinsert extends aLL {
         Node node=head;
         if(index==0){
             Node temp=new Node(val);
-            temp=node.next;
+            node.next=temp;
             return temp;
         }
         node=node.next;
