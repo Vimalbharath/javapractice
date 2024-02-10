@@ -1,11 +1,11 @@
 package linkedlist;
 
 public class aLL {
-    private Node head;
-    private Node tail;
+    public Node head;
+    public Node tail;
     
 
-    private int size;
+    public int size;
     
     
 
