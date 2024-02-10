@@ -62,6 +62,7 @@ class Solution {
                 tail=tail.next;
         }
          while(list2!=null){
+            //val for tail,only tail,tail.next
              tail.next=list2;
                 list2=list2.next;
                 tail=tail.next;
