@@ -9,7 +9,7 @@ public class fremoveduplicate extends aLL {
         //     return head;
         // }
         while (node != null) {
-            
+            // can also use if else
             while (node.next!=null && node.value == node.next.value) {
                 node.next = node.next.next;
                 //not workswhen 1,1,1
