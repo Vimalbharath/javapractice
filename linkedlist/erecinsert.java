@@ -9,7 +9,8 @@ public class erecinsert extends aLL {
             temp=node.next;
             return temp;
         }
-        node.next=insertrec(val,index-1);
+        node=node.next;
+        return node.next=insertrec(val,index-1);
 
 
     }
