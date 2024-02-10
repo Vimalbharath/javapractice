@@ -1,17 +1,23 @@
 package linkedlist;
 
 public class erecinsert extends aLL {
+    public void insertrec(int val,int index){
+        head=insertrec(val,index,head);
+    }
 
-    public Node insertrec(int val,int index){
-        Node node=head;
+    public Node insertrec(int val,int index,Node node){
+        //Node node=head;
         if(index==0){
-            Node temp=new Node(val);
-            temp.next=node.next;
-            node.next=temp;
+            //helper class and Node temp=new Node(val,node); cause error
+            Node temp=new Node(val,node);
+            //temp.next=node;
+            //node.next=temp;
+            size++;
             return temp;
         }
-        node=node.next;
-        return node.next=insertrec(val,index-1);
+        //node=node.next;
+        node.next=insertrec(val,index-1,node.next);
+        return node;
 
 
     }
