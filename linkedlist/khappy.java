@@ -1,5 +1,5 @@
 package linkedlist;
-
+//https://leetcode.com/problems/happy-number/description/
 public class khappy {
     public static boolean isHappy(int n) {
         int f=n;
