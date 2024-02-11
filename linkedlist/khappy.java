@@ -2,12 +2,12 @@ package linkedlist;
 
 public class khappy {
     public static boolean isHappy(int n) {
-        int f=0;
-        int s=0;
+        int f=n;
+        int s=n;
 
         do{
-        f=sum(n);
-        s=sum(sum(n));
+        f=sum(f);
+        s=sum(sum(s));
         if(f==1){
             return true;
         }
