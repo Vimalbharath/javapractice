@@ -12,12 +12,14 @@ public class ilinkedlistcyclelength {
             s = s.next;
             if (f == s) {
                 //f = head;
+                int count = 0;
+                ListNode temp=s;
                 do {
                     //f = f.next;
-                    s = s.next;
+                    temp = temp.next;
                     count = count + 1;
-                } while (f != s);
-
+                } while (temp != s);
+                return count;
             }
         }
         return 0;
