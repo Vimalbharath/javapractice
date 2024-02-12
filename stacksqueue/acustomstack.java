@@ -35,6 +35,32 @@ public class acustomstack {
     public boolean isfull(){
         return ptr==data.length-1;
     }
+
+    public boolean isempty(){
+        return ptr==-1;
+    }
    
+    public int pop(){
+        if(isempty()){
+            System.out.println("Stack is empty");
+            return -1;
+        }
+       
+        return data[ptr--];
+    }
+
+    public static void main(String[] args) {
+        acustomstack stack=new acustomstack();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        stack.push(4);
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+
+    }
 
 }
