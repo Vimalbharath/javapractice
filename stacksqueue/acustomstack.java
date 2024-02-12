@@ -40,16 +40,15 @@ public class acustomstack {
         return ptr==-1;
     }
    
-    public int pop(){
+    public int pop() throws bstackexception{
         if(isempty()){
-            System.out.println("Stack is empty");
-            return -1;
+            throw new bstackexception("Stack is full");
         }
        
         return data[ptr--];
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws bstackexception{
         acustomstack stack=new acustomstack();
         stack.push(1);
         stack.push(2);
@@ -59,6 +58,8 @@ public class acustomstack {
         System.out.println(stack.pop());
         System.out.println(stack.pop());
         System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        stack.push(4);
         System.out.println(stack.pop());
 
     }
