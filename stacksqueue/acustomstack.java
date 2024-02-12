@@ -1,7 +1,7 @@
 package stacksqueue;
 
 public class acustomstack {
-    private int [] data;
+    public int [] data;
     private static final int DEFAULT_SIZE=10;
 
     int ptr=-1;
