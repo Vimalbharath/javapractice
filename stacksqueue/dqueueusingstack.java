@@ -7,8 +7,8 @@ public class dqueueusingstack {
     public Stack<Integer> second;
 
     public dqueueusingstack() {
-        Stack<Integer> first = new Stack<>();
-        Stack<Integer> second = new Stack<>();
+         first = new Stack<>();
+         second = new Stack<>();
         // MyQueue first = new MyQueue();
         // MyQueue second = new MyQueue();
     }
@@ -41,7 +41,7 @@ public class dqueueusingstack {
     }
     
     public boolean empty() {
-        return this.empty();
+        return first.empty();
     }
     public static void main(String[] args) {
         dqueueusingstack obj = new dqueueusingstack();
