@@ -1,6 +1,7 @@
 package stacksqueue;
 
 import java.util.Stack;
+//https://leetcode.com/problems/implement-queue-using-stacks/
 
 public class dqueueusingstack {
     public Stack<Integer> first;
