@@ -3,6 +3,9 @@ package stacksqueue;
 import java.util.Stack;
 
 public class dqueueusingstack {
+    public Stack<Integer> first;
+    public Stack<Integer> second;
+
     public dqueueusingstack() {
         Stack<Integer> first = new Stack<>();
         Stack<Integer> second = new Stack<>();
@@ -15,20 +18,40 @@ public class dqueueusingstack {
     }
     
     public int pop() {
-        while(!empty()){
+        //while(first!=empty()){
+        while(!first.empty()){
         second.push(first.pop());
         }
         int removed=second.pop();
-        while(!empty()){
+        while(!second.empty()){
         first.push(second.pop());
         }
+        return removed;
     }
     
     public int peek() {
-        
+         while(!first.empty()){
+        second.push(first.pop());
+        }
+        int removed=second.peek();
+        while(!second.empty()){
+        first.push(second.pop());
+        }
+        return removed;
     }
     
     public boolean empty() {
-        return first.empty();
+        return this.empty();
+    }
+    public static void main(String[] args) {
+        dqueueusingstack obj = new dqueueusingstack();
+  obj.push(1);
+  obj.push(2);
+  int param_2 = obj.pop();
+ int param_3 = obj.peek();
+ boolean param_4 = obj.empty();
+ System.out.println(param_2);
+ System.out.println(param_3);
+ System.out.println(param_4);
     }
 }
