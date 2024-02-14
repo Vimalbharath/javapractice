@@ -10,17 +10,17 @@ public class fvalidpaeanthesis {
                 stack.push(ch);
             }else{
                 if(ch=='}'){
-                    if(stack.isEmpty()||stack.pop()!='}'){
+                    if(stack.isEmpty()||stack.pop()!='{'){
                         return false;
                     }
                 }
                 if(ch==']'){
-                    if(stack.isEmpty()||stack.pop()!=']'){
+                    if(stack.isEmpty()||stack.pop()!='['){
                         return false;
                     }
                 }
                 if(ch==')'){
-                    if(stack.isEmpty()||stack.pop()!=')'){
+                    if(stack.isEmpty()||stack.pop()!='('){
                         return false;
                     }
                 }
