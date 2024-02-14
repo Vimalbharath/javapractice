@@ -1,6 +1,7 @@
 package stacksqueue;
 
 import java.util.Stack;
+//https://leetcode.com/problems/valid-parentheses/
 
 public class fvalidpaeanthesis {
      public boolean isValid(String s) {
